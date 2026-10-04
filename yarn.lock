@@ -355,12 +355,115 @@
   dependencies:
     "@types/mdx" "^2.0.0"
 
+"@napi-rs/keyring-darwin-arm64@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-darwin-arm64/-/keyring-darwin-arm64-1.3.0.tgz#11e35692d0c195d62a61280d6489812ee54a7c80"
+  integrity sha512-pl76hJvdYUBn6I24bXiOBMA9nbDapo3I5B+f3OorjDU4dUMSypXeKbOVehJe8fhgTiH24flMyTS3aAIy43xegQ==
+
+"@napi-rs/keyring-darwin-x64@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-darwin-x64/-/keyring-darwin-x64-1.3.0.tgz#99c0be33b8d9189f3f51eaf622e5f924515ffc62"
+  integrity sha512-YcJtEV5LA3cvA4z3BurgxH5IhTsW1JfIvcAAcqcecwk06Si9F9NqkxbZVIfDwQ8oRHgaBmT3zZJnLAotCrVahw==
+
+"@napi-rs/keyring-freebsd-x64@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-freebsd-x64/-/keyring-freebsd-x64-1.3.0.tgz#fed51e5aa2523522aded28e61814ccedf7d98981"
+  integrity sha512-vlLf31TGhfRAaxLDBhg8b89ss0HHD/lyNmL5F3UjSaz5CUXElsJmKYq9fqA/B+cZKUEUcLHHGhF0I/CqcFdaVw==
+
+"@napi-rs/keyring-linux-arm-gnueabihf@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm-gnueabihf/-/keyring-linux-arm-gnueabihf-1.3.0.tgz#3cd563310ef3579e8f87c1933d469683d9f84708"
+  integrity sha512-KiWdMMu/Inz/bHHIAGrnF7r54FZDYXuHO6UFF/rhIrshUsxbMG1Rl9lEymNtqqsVo927G0VYcb02FzWQ3iBQRQ==
+
+"@napi-rs/keyring-linux-arm64-gnu@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm64-gnu/-/keyring-linux-arm64-gnu-1.3.0.tgz#9b1ee1e8b76fe2e6a257add2bad8458ee2716dfd"
+  integrity sha512-eyKGpY40lm9Jvs1aD294XRH4y7+TlJM0YVAryZeXA6TX0mb4gMkxVXwSQv7MCwgah7raeUd0dKUb4BPAYIgcMg==
+
+"@napi-rs/keyring-linux-arm64-musl@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-arm64-musl/-/keyring-linux-arm64-musl-1.3.0.tgz#94852b06d0f64adb5b4bdcb68bf3665020e6380c"
+  integrity sha512-iIK6JWHXAJqDrEyLY3TmswwloVyt2vj+04TZnew+uSJ9gnDO8EwRbp3/iw3LpWaXiDO7VomGO6y8I0Id8uBZSw==
+
+"@napi-rs/keyring-linux-riscv64-gnu@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-riscv64-gnu/-/keyring-linux-riscv64-gnu-1.3.0.tgz#a249762cbacdaf620285d49790402a3b05e28b65"
+  integrity sha512-/PGqrwn6EwgtK6vccASSXJRfOSP4vN1F4ASsIQ+7MdrK6hNvAJ1FZPrIuD5gGGdxezo3F++To2Wq7DbuGIeuNQ==
+
+"@napi-rs/keyring-linux-x64-gnu@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-x64-gnu/-/keyring-linux-x64-gnu-1.3.0.tgz#1c6afd60505f755c1bdd0028645fb8dc65da3685"
+  integrity sha512-2PDK1WKWTu9lBGq9VvNEkSlQD3O7YwVpmnyN2M3cy4v7NJ/8gDMd9GXv3G+FVXN13uhp4gnnPBS+ScefmEeD2A==
+
+"@napi-rs/keyring-linux-x64-musl@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-linux-x64-musl/-/keyring-linux-x64-musl-1.3.0.tgz#bd5f14cacd3dabec3213ef1d4a31d94fe440aba9"
+  integrity sha512-oJ2HkX8YUo46QBkn0pG+HuIKQNqr523q6vBobCn+P95s4C4K6/kLBqHY/1bg5J4ap31DzsznhnFKcfBNBsjCnw==
+
+"@napi-rs/keyring-win32-arm64-msvc@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-arm64-msvc/-/keyring-win32-arm64-msvc-1.3.0.tgz#dcbec8edd84197b1aedc5509c6b6a69f5e6060e6"
+  integrity sha512-tOd3c/uAaeoE4ycVlmAdSvygz0Zt3zdca6Y7gokBeIbaRDWpjDIUOpU3MvML59XAaqyuKGsVVu0F/DZb1lHPmw==
+
+"@napi-rs/keyring-win32-ia32-msvc@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-ia32-msvc/-/keyring-win32-ia32-msvc-1.3.0.tgz#513425ec47c31c20c8d0811e27e49dcac0e589c8"
+  integrity sha512-sPSqeAFZMGqP1R++M2JTza7GQJJ/TpCo6JU6Vcd4jnebvOaEDs9b7eipakU1PJdSvhpC2yXMCNRk9gXfrhuwHQ==
+
+"@napi-rs/keyring-win32-x64-msvc@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring-win32-x64-msvc/-/keyring-win32-x64-msvc-1.3.0.tgz#8e75ac2eecb8c9035c844d9850dd0f2b79b33f7b"
+  integrity sha512-4DnCWXwDc0HRKwyRlG5y0VhKZW2tNRQfKKfyj6IX/KWfDNyq9hn4n+GL1auyDcOO/v8PwnhmYo2+rOOqCkvvOg==
+
+"@napi-rs/keyring@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@napi-rs/keyring/-/keyring-1.3.0.tgz#14f572c05768c42b1eba1780ae5b844c1c37901e"
+  integrity sha512-WrOw/bcXm0f9qHkumlT1QlArXSTWqaY9sunsDpOk+yCCorCKMxvWT/a3xko4EYHVdeZoh00yI2TydXn6eyICDA==
+  optionalDependencies:
+    "@napi-rs/keyring-darwin-arm64" "1.3.0"
+    "@napi-rs/keyring-darwin-x64" "1.3.0"
+    "@napi-rs/keyring-freebsd-x64" "1.3.0"
+    "@napi-rs/keyring-linux-arm-gnueabihf" "1.3.0"
+    "@napi-rs/keyring-linux-arm64-gnu" "1.3.0"
+    "@napi-rs/keyring-linux-arm64-musl" "1.3.0"
+    "@napi-rs/keyring-linux-riscv64-gnu" "1.3.0"
+    "@napi-rs/keyring-linux-x64-gnu" "1.3.0"
+    "@napi-rs/keyring-linux-x64-musl" "1.3.0"
+    "@napi-rs/keyring-win32-arm64-msvc" "1.3.0"
+    "@napi-rs/keyring-win32-ia32-msvc" "1.3.0"
+    "@napi-rs/keyring-win32-x64-msvc" "1.3.0"
+
 "@napi-rs/wasm-runtime@^1.1.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@napi-rs/wasm-runtime/-/wasm-runtime-1.2.4.tgz#ae38d9ea8483942054c5d82f00c0163374cd1e5f"
   integrity sha512-AJxoUD2/15ESHbvpcyjU274nsAPLuOtPHCk0vKJM5pj//Fg/B1FXNWjPnXTT9PymCYYiHo4zPj0ZomXBKhoy7g==
   dependencies:
     "@tybys/wasm-util" "^0.10.3"
+
+"@neon/config@1.8.3", "@neon/config@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@neon/config/-/config-1.8.3.tgz#0b6e05f5a2a18c16161841800271ac0d3721b40a"
+  integrity sha512-/UmkgmHrm9tTOoFd7g3DttqlFFA3KG+d6JULLk7JzhvU2CwHrUaKiRmE1OmhOQAqJ3Mm49c/G5nDVbSefyFCrw==
+  dependencies:
+    "@neon/sdk" "7.0.0"
+    jiti "^2.7.0"
+    zod "^4.4.3"
+
+"@neon/env@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@neon/env/-/env-1.5.0.tgz#e160509bc24546fd73421049803695e58d37b7ca"
+  integrity sha512-XUj//QQ+HSwfFmHFCi+5tRDg/VeLl7VMjA3chlyR5z2idrjW23aB8RDdBoxNsAUzCplFd+s/iHW0Kvxu72ejxw==
+  dependencies:
+    "@neon/config" "1.8.3"
+    yargs "^18.0.0"
+    zod "^4.4.3"
+  optionalDependencies:
+    "@napi-rs/keyring" "1.3.0"
+
+"@neon/sdk@7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@neon/sdk/-/sdk-7.0.0.tgz#9616d4ae93305636170dcd0f6a3e97e645f7508d"
+  integrity sha512-hF/Om50SmpKK2PQldcwYxi6b3p7S2wlwW8fX+54jx88xHaEu7hB4dojuuuP8nwQz24qq/p/jxVm0P9DztKPoJA==
 
 "@next/env@16.3.5":
   version "16.3.5"
@@ -819,6 +922,16 @@ acorn@^8.0.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.18.0.tgz#4faf01b2d6d326bfeed97aea1f52220b5f4c1940"
   integrity sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==
 
+ansi-regex@^6.2.2:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-6.4.0.tgz#69093d6436d30dbb9b04fe7bdcbcfe16c697d8a1"
+  integrity sha512-KzTVk2tCWAHtYrvvvaP8bJKJq2pVinhLcGEQdtLIYPbmNGNyYe8QwNaTUYQp2J7/vIsUKt5QCqAfUkYyG9DkOw==
+
+ansi-styles@^6.2.1:
+  version "6.2.3"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-6.2.3.tgz#c044d5dcc521a076413472597a1acb1f103c4041"
+  integrity sha512-4Dj6M28JB+oAH8kFkTLUo+a2jwOFkuqb3yucU0CANcRRUbxS0cP0nZYCGjcc3BNXwRIsUVmDGgzawme7zvJHvg==
+
 assertion-error@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-2.0.1.tgz#f641a196b335690b1070bf00b6e7593fec190bf7"
@@ -925,6 +1038,15 @@ client-only@0.0.1:
   resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
   integrity sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==
 
+cliui@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-9.0.1.tgz#6f7890f386f6f1f79953adc1f78dec46fcc2d291"
+  integrity sha512-k7ndgKhwoQveBL+/1tqGJYNz097I7WOvwbmmU2AR5+magtbjPWQTS1C5vzGkBC8Ym8UWRzfKUzUUqFLypY4Q+w==
+  dependencies:
+    string-width "^7.2.0"
+    strip-ansi "^7.1.0"
+    wrap-ansi "^9.0.0"
+
 collapse-white-space@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/collapse-white-space/-/collapse-white-space-2.1.0.tgz#640257174f9f42c740b40f3b55ee752924feefca"
@@ -1014,6 +1136,11 @@ effect@3.21.0:
     "@standard-schema/spec" "^1.0.0"
     fast-check "^3.23.1"
 
+emoji-regex@^10.3.0:
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.6.0.tgz#bf3d6e8f7f8fd22a65d9703475bc0147357a6b0d"
+  integrity sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==
+
 empathic@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/empathic/-/empathic-2.0.0.tgz#71d3c2b94fad49532ef98a6c34be0386659f6131"
@@ -1051,6 +1178,11 @@ esast-util-from-js@^2.0.0:
     acorn "^8.0.0"
     esast-util-from-estree "^2.0.0"
     vfile-message "^4.0.0"
+
+escalade@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.2.0.tgz#011a3f69856ba189dffa7dc8fcce99d2a87903e5"
+  integrity sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==
 
 estree-util-attach-comments@^3.0.0:
   version "3.0.0"
@@ -1137,6 +1269,16 @@ fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
+
+get-caller-file@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
+
+get-east-asian-width@^1.0.0, get-east-asian-width@^1.5.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/get-east-asian-width/-/get-east-asian-width-1.7.0.tgz#7ee99f0bd5ab7c622002deeabba232923726d1d4"
+  integrity sha512-XjH1AECxf0giL2V1aU8vKyRR2ppRUb5c0EvT7zuJTokQ74bNo52zOtghqdWIqrhUD79fo3x0WfKZdOqxF6LG1Q==
 
 giget@^2.0.0:
   version "2.0.0"
@@ -2187,6 +2329,23 @@ std-env@^4.2.0:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-4.3.0.tgz#4e7231b61fd83219aa7f76f71fa8818b07e41321"
   integrity sha512-OtU/EgQ1kIm5KwqQpBC6ZEMXrZRui11w8zgfTWp8cdO9B8OaPsbA8bTHO2P+HNo1VlUTGMVBwPhydu6poeXiag==
 
+string-width@^7.0.0, string-width@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-7.2.0.tgz#b5bb8e2165ce275d4d43476dd2700ad9091db6dc"
+  integrity sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==
+  dependencies:
+    emoji-regex "^10.3.0"
+    get-east-asian-width "^1.0.0"
+    strip-ansi "^7.1.0"
+
+string-width@^8.2.1:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-8.3.0.tgz#f1e85ca6d276ed9226c979c3651fb7abf548fbbe"
+  integrity sha512-ZbmZM0JCihQN91dWnxoipT2KOEyHqEyfRXUyjuRhW8b/xnqPDoq4gWEVApTVa9db2wN8mmoikgFBbjh71+cGeQ==
+  dependencies:
+    get-east-asian-width "^1.5.0"
+    strip-ansi "^7.1.2"
+
 stringify-entities@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/stringify-entities/-/stringify-entities-4.0.4.tgz#b3b79ef5f277cc4ac73caeb0236c5ba939b3a4f3"
@@ -2194,6 +2353,13 @@ stringify-entities@^4.0.0:
   dependencies:
     character-entities-html4 "^2.0.0"
     character-entities-legacy "^3.0.0"
+
+strip-ansi@^7.1.0, strip-ansi@^7.1.2:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-7.2.0.tgz#d22a269522836a627af8d04b5c3fd2c7fa3e32e3"
+  integrity sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==
+  dependencies:
+    ansi-regex "^6.2.2"
 
 style-to-js@^1.0.0:
   version "1.1.21"
@@ -2417,12 +2583,43 @@ why-is-node-running@3.2.1:
   resolved "https://registry.yarnpkg.com/why-is-node-running/-/why-is-node-running-3.2.1.tgz#f66f0d61f861e4d3965a7ad63645a953f550830c"
   integrity sha512-Tb2FUhB4vUsGQlfSquQLYkApkuPAFQXGFzxWKHHumVz2dK+X1RUm/HnID4+TfIGYJ1kTcwOaCk/buYCEJr6YjQ==
 
+wrap-ansi@^9.0.0:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-9.0.2.tgz#956832dea9494306e6d209eb871643bb873d7c98"
+  integrity sha512-42AtmgqjV+X1VpdOfyTGOYRi0/zsoLqtXQckTmqTeybT+BDIbM/Guxo7x3pE2vtpr1ok6xRqM9OpBe+Jyoqyww==
+  dependencies:
+    ansi-styles "^6.2.1"
+    string-width "^7.0.0"
+    strip-ansi "^7.1.0"
+
+y18n@^5.0.5:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
+  integrity sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==
+
 yaml@^2.0.0:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.9.1.tgz#c16233fb31944e705cfefaff38795587f57588ce"
   integrity sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==
 
-zod@^4.6.5:
+yargs-parser@^22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-22.0.0.tgz#87b82094051b0567717346ecd00fd14804b357c8"
+  integrity sha512-rwu/ClNdSMpkSrUb+d6BRsSkLUq1fmfsY6TOpYzTwvwkg1/NRG85KBy3kq++A8LKQwX6lsu+aWad+2khvuXrqw==
+
+yargs@^18.0.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-18.2.0.tgz#c258276baa935fe8fb911d986067f6d0733e8608"
+  integrity sha512-9OpKOLeaoNFecEp7P6iYbzze/5CqWoH7N3SMs/6y1XF4nMvFMspEGZzJ6uFi9MmQwXhyzqYoSEKO3tvA3Z/o2w==
+  dependencies:
+    cliui "^9.0.1"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    string-width "^8.2.1"
+    y18n "^5.0.5"
+    yargs-parser "^22.0.0"
+
+zod@^4.4.3, zod@^4.6.5:
   version "4.6.5"
   resolved "https://registry.yarnpkg.com/zod/-/zod-4.6.5.tgz#e3af3edbdc260239c52f73caad05dbbffe6e82cd"
   integrity sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==
