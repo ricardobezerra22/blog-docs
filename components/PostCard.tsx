@@ -10,24 +10,66 @@ type Post = {
 };
 
 export function PostCard({ post }: { post: Post }) {
+	const dateDisplay = post.publishedAt
+		? post.publishedAt
+				.toLocaleDateString("en-US", { year: "numeric", month: "2-digit", day: "2-digit" })
+				.replace(/\//g, ".")
+		: null;
+
+	const dateReadable = post.publishedAt?.toLocaleDateString("en-US", {
+		year: "numeric",
+		month: "long",
+		day: "numeric",
+	});
+
 	return (
-		<article className="rounded-lg border border-zinc-200 p-5 transition-shadow hover:shadow-sm">
-			<Link href={`/${post.slug}`} className="group">
-				<h2 className="text-xl font-semibold group-hover:text-blue-600">{post.title}</h2>
-			</Link>
-			{post.excerpt && <p className="mt-1 text-sm text-zinc-500">{post.excerpt}</p>}
-			<div className="mt-3 flex items-center gap-4">
-				{post.publishedAt && (
-					<time className="text-xs text-zinc-400" dateTime={post.publishedAt.toISOString()}>
-						{post.publishedAt.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+		<Link
+			href={`/${post.slug}`}
+			className="entry-grid"
+			/* Descriptive label for screen readers: title + date if available */
+			aria-label={`${post.title}${dateReadable ? `, published ${dateReadable}` : ""}`}
+		>
+			{/* Date column */}
+			<div>
+				{dateDisplay && (
+					<time
+						className="entry-date"
+						dateTime={post.publishedAt!.toISOString()}
+						/* Hide from SR — the aria-label on the link already includes the readable date */
+						aria-hidden="true"
+					>
+						{dateDisplay}
 					</time>
 				)}
-				{post.tags.map((tag) => (
-					<span key={tag.slug} className="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600">
-						{tag.name}
-					</span>
-				))}
 			</div>
-		</article>
+
+			{/* Content column */}
+			<div>
+				{/* aria-hidden: the full post title is already in the link's aria-label */}
+				<p className="entry-title" aria-hidden="true">
+					{post.title}
+				</p>
+
+				{post.excerpt && (
+					<p className="entry-excerpt">
+						{post.excerpt}
+					</p>
+				)}
+
+				{post.tags.length > 0 && (
+					<ul
+						role="list"
+						aria-label="Tags"
+						style={{ display: "flex", gap: "5px", marginTop: "10px", flexWrap: "wrap", listStyle: "none", padding: 0 }}
+					>
+						{post.tags.map((tag) => (
+							<li key={tag.slug}>
+								<span className="entry-tag">{tag.name}</span>
+							</li>
+						))}
+					</ul>
+				)}
+			</div>
+		</Link>
 	);
 }

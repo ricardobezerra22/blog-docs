@@ -2,3 +2,5 @@
 .next/
 node_modules/
 coverage/
+.neon
+.env.local

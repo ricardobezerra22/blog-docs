@@ -1,5 +1,6 @@
 import { requireApiKey } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { Prisma } from "@prisma/client";
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
@@ -32,31 +33,45 @@ export async function POST(req: Request) {
 	const deny = requireApiKey(req);
 	if (deny) return deny;
 
-	const body = await req.json();
-	const { title, slug, content, excerpt, published, tags } = body;
+	let body: unknown;
+	try {
+		body = await req.json();
+	} catch {
+		return Response.json({ error: "request body must be valid JSON" }, { status: 400 });
+	}
+
+	const { title, slug, content, excerpt, published, tags } = body as Record<string, unknown>;
 
 	if (!title || !slug || !content) {
 		return Response.json({ error: "title, slug, and content are required" }, { status: 400 });
 	}
 
-	const post = await prisma.post.create({
-		data: {
-			title,
-			slug,
-			content,
-			excerpt: excerpt ?? null,
-			published: published ?? false,
-			publishedAt: published ? new Date() : null,
-			tags: tags?.length
-				? {
-						connectOrCreate: tags.map((t: { name: string; slug: string }) => ({
-							where: { slug: t.slug },
-							create: { name: t.name, slug: t.slug },
-						})),
-					}
-				: undefined,
-		},
-	});
+	try {
+		const post = await prisma.post.create({
+			data: {
+				title: title as string,
+				slug: slug as string,
+				content: content as string,
+				excerpt: (excerpt as string) ?? null,
+				published: (published as boolean) ?? false,
+				publishedAt: published ? new Date() : null,
+				tags: (tags as { name: string; slug: string }[])?.length
+					? {
+							connectOrCreate: (tags as { name: string; slug: string }[]).map((t) => ({
+								where: { slug: t.slug },
+								create: { name: t.name, slug: t.slug },
+							})),
+						}
+					: undefined,
+			},
+		});
 
-	return Response.json(post, { status: 201 });
+		return Response.json(post, { status: 201 });
+	} catch (err) {
+		if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === "P2002") {
+			return Response.json({ error: `a post with slug "${slug}" already exists` }, { status: 409 });
+		}
+		console.error("POST /api/posts failed:", err);
+		return Response.json({ error: "failed to create post" }, { status: 500 });
+	}
 }
