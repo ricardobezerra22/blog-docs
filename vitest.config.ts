@@ -14,6 +14,7 @@ export default defineConfig({
 			reporter: ["text", "lcov"],
 			include: ["lib/**", "app/api/**"],
 			exclude: ["node_modules/**", ".next/**"],
+			thresholds: { statements: 80, branches: 80, functions: 80, lines: 80 },
 		},
 	},
 	resolve: {
