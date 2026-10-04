@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-white text-zinc-900 antialiased;
+  }
+}
